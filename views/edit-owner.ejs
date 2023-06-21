@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+        <title>Artists Web Application - Edit Artist</title>
+      
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css" rel="stylesheet">
+      </head>
+<body>
+<div class="container py-5">
+  <h1>Edit Artist</h1>
+  <form action="/owners/edit/<%= owner.owner_id %>" method="POST" class="mt-4">
+    <div class="mb-3">
+      <label for="first_name" class="form-label">First Name:</label>
+      <input type="text" name="first_name" value="<%= owner.first_name %>" class="form-control" required>
+    </div>
+    <div class="mb-3">
+      <label for="last_name" class="form-label">Last Name:</label>
+      <input type="text" name="last_name" value="<%= owner.last_name %>" class="form-control" required>
+    </div>
+    <div class="mb-3">
+      <label for="phone_number" class="form-label">Phone Number:</label>
+      <input type="text" name="phone_number" value="<%= owner.phone_number %>" class="form-control">
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email:</label>
+      <input type="email" name="email" value="<%= owner.email %>" class="form-control" required>
+    </div>
+    <input type="submit" value="Update Owner" class="btn btn-primary">
+</form>
+</div>
+</body>
+   

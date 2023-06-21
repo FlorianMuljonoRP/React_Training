@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+        <title>Pet Hospital Web Application - User Login</title>
+      
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css" rel="stylesheet">
+      </head>
+<body>
+    <%- include('header') %>
+    <h1>User Profile</h1>
+    <div>
+        <p><strong>User ID:</strong> <%= user.user_id %></p>
+        <p><strong>Username:</strong> <%= user.username %></p>
+        <p><strong>First Name:</strong> <%= user.first_name %></p>
+        <p><strong>Last Name:</strong> <%= user.last_name %></p>
+        <p><strong>Email:</strong> <%= user.email %></p>
+    </div>
+</body>
+</html>
